@@ -1,13 +1,13 @@
 {
-  "homepage": "https://rewky05.github.io/Wash-Up-Laundry",
+  "homepage": "https://rewky05.github.io/wash-up-laundry-web",
   "name": "washup",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prepublish": "npm run build",
-    "publish": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

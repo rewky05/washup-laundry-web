@@ -26,7 +26,7 @@ const Locations = () => {
           Where To Find Us
         </h2>
       </div>
-      <div className="bg-white rounded-3xl mt-[-20px] xl:w-[960px] xs:w-[250px] sm:w-[450px] md:w-[650px] lg:w-[850px] h-[400px]">
+      <div className="bg-white rounded-3xl mt-[-20px] xl:w-[960px] xs:w-[250px] sm:w-[450px] md:w-[650px] lg:w-[850px] h-[430px] p-4">
         <MapContainer
           className="z-0 outline-none h-[400px]"
           center={[10.305101, 123.910843]}
