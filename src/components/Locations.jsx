@@ -1,6 +1,17 @@
+import { useEffect, useRef } from "react";
 import LocationsBackground from "../assets/location-bg.png";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 const Locations = () => {
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (mapRef.current) {
+      mapRef.current.setView([10.305101, 123.910843], 13);
+    }
+  }, []);
+
   return (
     <div
       name="locations"
@@ -15,22 +26,22 @@ const Locations = () => {
           Where To Find Us
         </h2>
       </div>
-      <div className="bg-white xl:w-[1060px] xs:w-[250px] sm:w-[450px] md:w-[650px] lg:w-[950px] h-[480px] rounded-3xl mt-[-20px] grid lg:grid-rows-2">
-        <ul className="grid grid-cols-3 text-center">
-          <li className="p-4 m-4">
-            <p>Branch 1</p>
-            <p>Hours:</p>
-          </li>
-          <li className="p-4 m-4">
-            <p>Branch 2</p>
-            <p>Hours:</p>
-          </li>
-          <li className="p-4 m-4">
-            <p>Branch 3</p>
-            <p>Hours:</p>
-          </li>
-        </ul>
-        <div className="p-4 mx-auto">Maps</div>
+      <div className="bg-white rounded-3xl mt-[-20px] xl:w-[960px] xs:w-[250px] sm:w-[450px] md:w-[650px] lg:w-[850px] h-[400px]">
+        <MapContainer
+          className="z-0 outline-none h-[400px]"
+          center={[10.305101, 123.910843]}
+          zoom={13}
+          // style={{ height: "30px" }}
+          ref={mapRef}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={[10.305101, 123.910843]}>
+            <Popup>Wash Up Laundry Fuente Branch</Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   );
