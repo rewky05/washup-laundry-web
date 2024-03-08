@@ -1,11 +1,15 @@
 import { Link } from "react-scroll";
+import FooterLogo from "../assets/washup-logo.png";
 
 const Footer = () => {
   return (
     <div className="w-full bg-red text-white py-8 px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-      <div className="flex items-center justify-center">
-        <img src={"../src/assets/washup-logo.png"} width={300} />
-      </div>
+      <div
+        className="flex items-center justify-center bg-cover bg-center h-[75%] w-[75%]"
+        style={{
+          backgroundImage: `url(${FooterLogo})`,
+        }}
+      ></div>
       <div className="xl:col-span-2 lg:col-span-1 md:col-span-1 col-span-1 flex justify-evenly">
         <div className="lg:mx-10 md:mx-8 md:pl-[20rem] mx-3">
           <h6 className="font-medium text-gray-400 pl-4">About Us</h6>
