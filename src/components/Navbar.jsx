@@ -16,7 +16,7 @@ const Navbar = () => {
           <img
             // src="public/washup-logo.png"
             // src={Logo}
-            src="../src/assets/washup-logo.png"
+            // src="../src/assets/washup-logo.png"
             className="md:w-40 min-[280px]:w-[140px] w-[160px]"
           />
         </div>
