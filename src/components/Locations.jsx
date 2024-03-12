@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import LocationsBackground from "../assets/location-bg.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import markerIcon from "/public/images/marker-icon.png";
+import markerShadow from "/public/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
@@ -8,10 +10,10 @@ const Locations = () => {
   const mapRef = useRef(null);
 
   const customIcon = L.icon({
-    iconUrl: "/public/images/marker-icon.png",
+    iconUrl: markerIcon,
     iconSize: [26, 40],
     iconAnchor: [16, 40],
-    shadowUrl: "/public/images/marker-shadow.png",
+    shadowUrl: markerShadow,
     shadowSize: [45, 45],
     shadowAnchor: [16, 43],
   });
