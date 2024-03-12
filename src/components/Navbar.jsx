@@ -61,7 +61,7 @@ const Navbar = () => {
         }`}
       >
         <div className="absolute top-0 mt-[18px] ml-[-10px]">
-          <img src={"../src/assets/washup-logo.png"} className="w-[180px]" />
+          <img src={Logo} className="w-[180px]" />
         </div>
         <li className="py-6 text-xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
