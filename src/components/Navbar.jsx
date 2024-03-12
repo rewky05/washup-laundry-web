@@ -14,8 +14,9 @@ const Navbar = () => {
       <div className="flex justify-center items-center text-red">
         <div>
           <img
-            // src="public/logo/washup-logo.png"
-            src={Logo}
+            // src="public/washup-logo.png"
+            // src={Logo}
+            src="../src/assets/washup-logo.png"
             className="md:w-40 min-[280px]:w-[140px] w-[160px]"
           />
         </div>
