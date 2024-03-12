@@ -13,12 +13,7 @@ const Navbar = () => {
     <div className="z-10 fixed top-0 w-full h-[80px] flex justify-between items-center xs:px-10 sm:px-16 bg-red font-inter text-white select-none">
       <div className="flex justify-center items-center text-red">
         <div>
-          <img
-            // src="public/washup-logo.png"
-            // src={Logo}
-            // src="../src/assets/washup-logo.png"
-            className="md:w-40 min-[280px]:w-[140px] w-[160px]"
-          />
+          <img src={Logo} className="md:w-40 min-[280px]:w-[140px] w-[160px]" />
         </div>
       </div>
 
