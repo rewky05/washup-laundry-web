@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 // import { Link as RouterLink } from "react-router-dom";
+import Logo from "../assets/washup-logo.png";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -13,7 +14,8 @@ const Navbar = () => {
       <div className="flex justify-center items-center text-red">
         <div>
           <img
-            src="public/logo/washup-logo.png"
+            // src="public/logo/washup-logo.png"
+            src={Logo}
             className="md:w-40 min-[280px]:w-[140px] w-[160px]"
           />
         </div>
