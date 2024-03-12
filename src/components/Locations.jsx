@@ -2,9 +2,19 @@ import { useEffect, useRef } from "react";
 import LocationsBackground from "../assets/location-bg.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
 const Locations = () => {
   const mapRef = useRef(null);
+
+  const customIcon = L.icon({
+    iconUrl: "/public/images/marker-icon.png",
+    iconSize: [26, 40],
+    iconAnchor: [16, 40],
+    shadowUrl: "/public/images/marker-shadow.png",
+    shadowSize: [45, 45],
+    shadowAnchor: [16, 43],
+  });
 
   useEffect(() => {
     if (mapRef.current) {
@@ -38,7 +48,7 @@ const Locations = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[10.305101, 123.910843]}>
+          <Marker position={[10.305101, 123.910843]} icon={customIcon}>
             <Popup>Wash Up Laundry Fuente Branch</Popup>
           </Marker>
         </MapContainer>
