@@ -18,13 +18,6 @@ const Hero = () => {
             <div>Naked tomorrow.</div>
           </h1>
         </div>
-        <div>
-          <img
-            className="w-[550px] my-8 opacity-0"
-            src={"./src/assets/hero2.png"}
-            alt="laundry"
-          />
-        </div>
       </div>
     </div>
   );
