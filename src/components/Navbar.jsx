@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <ul
-        className={`md:hidden absolute top-0 left-0 w-[250px] h-screen bg-[#8B0000] text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out ${
+        className={`md:hidden absolute top-0 left-0 w-[250px] h-screen bg-red text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out ${
           nav ? "" : "opacity-0 pointer-events-none"
         }`}
       >

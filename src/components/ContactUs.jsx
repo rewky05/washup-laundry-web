@@ -36,7 +36,7 @@ const ContactUs = () => {
   return (
     <div
       name="contact"
-      className="w-full bg-cover bg-center p-16 grid place-items-center"
+      className="w-full bg-cover bg-bottom p-16 grid place-items-center"
       style={{
         backgroundImage: `url(${ContactBackground})`,
       }}
@@ -94,11 +94,13 @@ const ContactUs = () => {
                 rows="6"
                 required
               />
-              <input
-                className="p-2 m-2 my-4 w-fit rounded-xl bg-yellow border"
+              <button
+                className="p-2 m-2 my-4 w-fit rounded-xl bg-yellow shadow-custom transition-transform hover:scale-105 hover:bg-red hover:text-white"
                 type="submit"
                 value="Submit"
-              />
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>

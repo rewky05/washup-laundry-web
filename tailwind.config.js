@@ -3,8 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+    
     colors: {
-      red: "#ff0000",
+      red: "#DD0202",
       yellow: "#ffff00",
       white: "#FFFFFFFF",
       black: "#000",
@@ -20,5 +21,6 @@ export default {
       xl: "1280px",
     },
   },
+  
   plugins: [],
 };

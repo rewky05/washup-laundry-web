@@ -16,20 +16,19 @@ const Footer = () => {
                 About
               </Link>
             </li>
-            <li className="py-2 text-sm">
-              <Link to="contact" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="lg:mx-10 md:mx-8 sm:mx-4 mx-3">
           <h6 className="font-medium text-gray-400 pl-4">Company</h6>
           <ul>
-            <li className="py-2 text-sm">Our Team</li>
-            <li className="py-2 text-sm">Terms</li>
-            <li className="py-2 text-sm">Guidelines</li>
-            <li className="py-2 text-sm">Blog</li>
+            <li className="py-2 text-sm">
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
+            {/* <li className="py-2 text-sm"></li> */}
+            {/* <li className="py-2 text-sm">Guidelines</li>
+            <li className="py-2 text-sm">Blog</li> */}
           </ul>
         </div>
         <div className="lg:mx-10 md:mx-8 sm:mx-4 mx-3">

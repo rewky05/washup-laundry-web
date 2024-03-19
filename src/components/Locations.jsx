@@ -27,12 +27,12 @@ const Locations = () => {
   return (
     <div
       name="locations"
-      className="w-full bg-cover bg-top p-16 z-0 grid place-items-center"
+      className="w-full h-screen bg-cover bg-top p-16 z-0 grid place-items-center"
       style={{
         backgroundImage: `url(${LocationsBackground})`,
       }}
     >
-      <div className="my-12 md:my-[68px] text-center">
+      <div className="mb-16 md:my-[68px] text-center">
         <h1 className="text-white">LOCATIONS</h1>
         <h2 className="text-[36px] text-white font-medium [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-black">
           Where To Find Us
@@ -51,7 +51,7 @@ const Locations = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={[10.305101, 123.910843]} icon={customIcon}>
-            <Popup>Wash Up Laundry Fuente Branch</Popup>
+            <Popup>Wash Up Laundry Galleria Branch</Popup>
           </Marker>
         </MapContainer>
       </div>

@@ -13,9 +13,9 @@ const Hero = () => {
     >
       <div className="max-w-[1240px] grid lg:grid-cols-2 lg:items-start lg:ml-10 xs:flex xs:flex-col xs:items-center">
         <div className="grid h-screen place-items-center">
-          <h1 className="md:text-5xl sm:text-4xl xs:text-2xl text-3xl text-red bg-white p-4 py-3 rounded-md border-2 xl:bg-none xl:border-none border-red font-light">
-            <div>Laundry today or</div>
-            <div>Naked tomorrow.</div>
+          <h1 className="md:text-7xl text-4xl text-white font-bold p-4 py-3 rounded-md">
+            <div className="mb-4">Laundry today</div>
+            <div>Worry free tomorrow.</div>
           </h1>
         </div>
       </div>

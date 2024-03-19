@@ -37,7 +37,7 @@ const Services = () => {
             </div>
             <div className="flex items-center py-2 mx-8 group-hover:text-white">
               <FaCheckCircle />
-              <p className="ml-3 group-hover:text-white">Press</p>
+              <p className="ml-3 group-hover:text-white">Fold</p>
             </div>
           </div>
         </div>
@@ -71,6 +71,10 @@ const Services = () => {
             <div className="flex items-center py-2 mx-8">
               <FaCheckCircle className="group-hover:text-white" />
               <p className="ml-3 group-hover:text-white">Handwash-dry-press</p>
+            </div>
+            <div className="flex items-center py-2 mx-8">
+              <FaCheckCircle className="group-hover:text-white" />
+              <p className="ml-3 group-hover:text-white">Press</p>
             </div>
           </div>
         </div>
