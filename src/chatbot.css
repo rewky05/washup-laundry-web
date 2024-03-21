@@ -1,0 +1,144 @@
+/* chatbot.css */
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chat-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.questions-container {
+  padding: 10px;
+}
+
+.question {
+  padding: 10px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.question:hover {
+  background-color: #fff700;
+}
+
+.selected {
+  background-color: #fff700;
+}
+
+.typing-indicator {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+.chat-messages {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #db1a00;
+}
+
+.message {
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+.message-content {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.message-timestamp {
+  font-size: 10px;
+  color: #000000;
+}
+
+.user-message {
+  max-width: 250px;
+  background-color: #bc1a1a;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 90px;
+}
+
+.user-message .message-timestamp {
+  color: #fff;
+  text-align: end;
+}
+
+.bot-message {
+  background-color: #f0e3e3;
+}
+
+.answer-options {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-top: 2px solid #db1a00;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+
+.answer-options p {
+  font-size: 15px;
+}
+
+.answer-options button {
+  font-size: 15px;
+}
+
+.yes-button,
+.no-button {
+  margin: 5px;
+  padding: 8px 16px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #db1a00;
+  color: #fff;
+}
+
+.yes-button:hover,
+.no-button:hover {
+  background-color: #f2ff00;
+  color: #000000;
+}
+
+.toggle-button {
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  background-color: #c6071a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.toggle-button.visible {
+  background-color: #eeff00;
+  color: #4b4848;
+}
