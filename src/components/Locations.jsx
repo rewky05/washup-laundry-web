@@ -50,8 +50,39 @@ const Locations = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+
           <Marker position={[10.305101, 123.910843]} icon={customIcon}>
-            <Popup>Wash Up Laundry Galleria Branch</Popup>
+            <Popup>
+              <span className="flex font-bold">
+                Wash Up Laundry Galleria Branch
+              </span>
+              <span>
+                Basement 2, Robinsons Galleria Cebu, Gen. Maxilom Avenue
+                Extension, Sergio Osme&#241;a Jr. Blvd, Cebu City
+              </span>
+            </Popup>
+          </Marker>
+          <Marker position={[10.3089782, 123.8936896]} icon={customIcon}>
+            <Popup>
+              <span className="flex font-bold">
+                Wash Up Laundry Fuente Branch
+              </span>
+              <span>
+                Ground Floor, Robinsons Fuente Cebu, Osme&#241;a Blvd, Ramos,
+                Cebu City
+              </span>
+            </Popup>
+          </Marker>
+          <Marker position={[10.3180371, 123.9049874]} icon={customIcon}>
+            <Popup>
+              <span className="flex font-bold">
+                Wash Up Laundry Ayala Center Cebu Branch
+              </span>
+              <span>
+                Basement 1, Services Lounge, Ayala Center Cebu, Cebu Business
+                Park, Cebu City
+              </span>
+            </Popup>
           </Marker>
         </MapContainer>
       </div>
